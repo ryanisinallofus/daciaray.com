@@ -99,13 +99,14 @@
       }
 
       #chevron {
-        display: none;
-        width: 100%;
-        margin: 0 9px 0 9px;
+        width: 220px;
+        margin: -8 9px 0 -3px;
         padding: 0 0 0 0;
         height: 60px;
+        top: 0;
+        right:0;
         background-size: contain;
-        background-image: url('./chevron.png');
+        background-image: url('./img/chevron.png');
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -182,7 +183,7 @@
       }
     </style>
 
-    <!-- Tablet -->
+    <!-- Everything Else -->
     <style>
       @media only screen
         and (min-device-width : 768px)
@@ -258,13 +259,21 @@
 
           header, section, footer {
             margin: 0;
-            padding: 64px;
+            padding: 0 64px 32px 64px;
+          }
+
+          header {
+            padding-top: 112px;
           }
 
           #page {
             background-color: white;
             max-width: 966px;
             margin: auto;
+          }
+
+          #about {
+            padding-top: 0px;
           }
 
           #selected-work img {
@@ -296,9 +305,8 @@
           <header>
             <h1>Dacia Ray</h1>
             <h2>Copy Editor Seattle, WA</h2>
+            <div style="text-align: right"><section id="chevron"></section></div>
           </header>
-
-          <section id="chevron"></section>
 
           <section id="about">
             <p>Dacia Ray is a freelance copy editor with over 15 years of experience working on a
@@ -319,7 +327,7 @@
             <ul>
               <li class="work jasper">
                 <ul>
-                  <li class="graphic"><img src="http://artgallery.yale.edu/sites/default/files/publications/jasper_johns_cover.jpg"></li>
+                  <li class="graphic"><img src="img/jasper_johns_cover.jpg"></li>
                   <li class="desc">
                     <cite>The Scream</cite> by Edward Munch. Painted in 1893.
                   </li>
@@ -327,7 +335,7 @@
               </li>
               <li class="work fed">
                 <ul>
-                  <li class="graphic"><img src="fed.png"></li>
+                  <li class="graphic"><img src="img/fed.png"></li>
                   <li class="desc">
                     <cite>The Scream</cite> by Edward Munch. Painted in 1893.
                   </li>
@@ -335,7 +343,7 @@
               </li>
               <li class="work burned">
                 <ul>
-                  <li class="graphic"><img src="burned.png"></li>
+                  <li class="graphic"><img src="img/burned.png"></li>
                   <li class="desc">
                     <cite>The Scream</cite> by Edward Munch. Painted in 1893.
                   </li>
