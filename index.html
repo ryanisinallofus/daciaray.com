@@ -14,7 +14,7 @@
       body {
         font-family: Helvetica, Arial, sans-serif;
         font-weight: lighter;
-        font-size: 18px;
+        font-size: 16px;
         background-color: #FFF;
         color: #2F2F2F;
         margin: 0px;
@@ -23,7 +23,7 @@
 
       header, section, footer {
         margin: 0;
-        padding: 14px;
+        padding: 24px;
       }
 
       header h1, header h2 {
@@ -32,6 +32,7 @@
       }
 
       header {
+        margin-top: 21px;
         margin-bottom: 0;
         padding-bottom: 0;
       }
@@ -40,7 +41,7 @@
         font-size: 21px;
       }
 
-      p, li {
+      p, li, blockquote {
         line-height: 140%;
       }
 
@@ -60,12 +61,22 @@
       }
 
       footer {
-        padding-bottom: 66px;
+        margin: 21px;
+        padding: 26px 0 66px 0;
+      }
+
+      footer img {
+        display: block;
+        margin: auto;
+        width: 100px;
+        margin-bottom: 26px;
       }
 
       footer p {
-        padding-top: 32px;
         border-top: solid 1px #ED9C9B;
+        padding-bottom: 66px;
+        margin: 0;
+        padding: 21px 0 0 0;
       }
 
       h1, h2, h3 {
@@ -78,11 +89,9 @@
 
       blockquote {
         display: block;
-        font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
         font-style: italic;
-        padding: 21px;
+        padding: 0px 21px 21px 21px;
         margin: 0 21px 21px 21px;
-        font-size: 150%;
         border-bottom: solid 1px #C7DFB4;
       }
 
@@ -135,11 +144,15 @@
         max-height: 200px;
       }
 
+      #selected-work br {
+        display: none;
+      }
+
       #selected-work .graphic {
         min-height: 130px;
         text-align: center;
         display: block;
-        background-color: #E3E3E3;
+        background-color: #EDEDED;
         padding: 16px 9px 9px 9px;
       }
 
@@ -149,8 +162,7 @@
 
       #selected-work .desc {
         padding: 9px;
-        color: white;
-        background-color: #2F2F2F;
+        background-color: #BCBCBC;
       }
 
       #client-list li {
@@ -159,35 +171,18 @@
         padding-left: 0px;
       }
 
-
-    </style>
-
-    <!-- Mobile -->
-    <style>
-      @media only screen
-      and (max-width: 320px)
-      and (max-device-width : 767px) {
-
-        header h1 {
-          margin-top: 21px;
-        }
-
-        header {
-          text-align: left;
-        }
-
-        #chevron {
-          height: 60px;
-        }
-
+      #quote p {
+        font-size: 24px;
+        font-style: italic;
+        padding: 0;
+        margin: 0;
       }
     </style>
 
     <!-- Everything Else -->
     <style>
       @media only screen
-        and (min-device-width : 768px)
-        and (max-device-width : 1024px) {
+        and (min-device-width : 768px) {
 
         body {
           font-size: 21px;
@@ -203,21 +198,13 @@
           font-size: 36px;
         }
 
+        blockquote {
+          padding: 9px 62px 62px 62px;
+        }
+
         #contact {
           padding: 36px 0 36px 0;
           margin-bottom: 33px;
-        }
-
-        blockquote {
-          padding: 46px;
-          margin: 0 36px 36px 36px;
-          font-size: 150%;
-          line-height: 140%;
-          border-bottom: solid 1px #C7DFB4;
-        }
-
-        blockquote br {
-          display: none;
         }
 
         #selected-work .graphic {
@@ -229,7 +216,12 @@
         }
 
         #selected-work .desc {
+          font-size: 16px;
           padding: 16px;
+        }
+
+        #selected-work br {
+          display: none;
         }
 
         #client-list h2 {
@@ -278,6 +270,15 @@
 
           #selected-work img {
             max-width: 200px;
+            max-height: 200px;
+          }
+
+          #selected-work .fed img {
+            padding-top: 21px;
+          }
+
+          #selected-work cite {
+            font-size: 18px;
           }
 
           #selected-work ul li.work {
@@ -304,21 +305,28 @@
 
           <header>
             <h1>Dacia Ray</h1>
-            <h2>Copy Editor Seattle, WA</h2>
+            <h2>Copy Editor - Seattle, WA</h2>
             <div style="text-align: right"><section id="chevron"></section></div>
           </header>
 
           <section id="about">
-            <p>Dacia Ray is a freelance copy editor with over 15 years of experience working on a
+            <p>I am a freelance copy editor with over 15 years of experience working on a
             variety of projects from magazines to books to corporate websites. In addition
-            to copy editing, she has a background as both a journalist and project manager at
-            several publications, start-ups and design firms. Whether you are looking for a
-            final proofread or an experienced eye to make your copy sing, she can help you.
-            Editing can be done in Word, InDesign, Google Docs, or HTML with or without
+            to copy editing, I have a background as both a journalist and project manager at
+            several publications, start-ups, and design firms. Whether you are looking for a
+            final proofread or an experienced eye to make your copy sing, I can help you.
+            I can edit in Word, InDesign, Google Docs, or HTML with or without
             version control (Git).</p>
           </section>
 
           <section id="contact"><a class="btn" href="mailto:daciaray@gmail.com">Contact Me<a></section>
+
+          <blockquote>
+            <p>"Dacia has done copy editing work for me since 2007 and is truly one
+            of the best. Dacia provides spectacular work quickly, reliably backed
+            up with sharp insight, intelligence, and improvements. Hire her!"</p>
+            <cite>- Henk Groenewald <br /> The&nbsp;Brand&nbsp;Ecologist</cite>
+          </blockquote>
 
           <section id="selected-work">
 
@@ -329,7 +337,7 @@
                 <ul>
                   <li class="graphic"><img src="img/jasper_johns_cover.jpg"></li>
                   <li class="desc">
-                    <cite>The Scream</cite> by Edward Munch. Painted in 1893.
+                    <cite>Jasper Johns: <br /> From Plate to Print</cite>
                   </li>
                 </ul>
               </li>
@@ -337,7 +345,7 @@
                 <ul>
                   <li class="graphic"><img src="img/fed.png"></li>
                   <li class="desc">
-                    <cite>The Scream</cite> by Edward Munch. Painted in 1893.
+                    <cite>FHLB of Seattle <br /> Annual Report</cite>
                   </li>
                 </ul>
               </li>
@@ -345,7 +353,7 @@
                 <ul>
                   <li class="graphic"><img src="img/burned.png"></li>
                   <li class="desc">
-                    <cite>The Scream</cite> by Edward Munch. Painted in 1893.
+                    <cite>Chihuly: <br /> Burned Drawings Volume 1</cite>
                   </li>
                 </ul>
               </li>
@@ -362,8 +370,8 @@
               <li><i>Sew News</i> magazine</li>
               <li><i>Seattle Business</i> magazine</li>
               <li>Past the Popcorn</li>
-              <li><u>Jonathan Raker and the Rise of Eve</u></li>
-              <li><u>Memoirs of Doris and George Van Vleet</u></li>
+              <li><i>Jonathan Raker and the Rise of Eve</i></li>
+              <li><i>Memoirs of Doris and George Van Vleet</i></li>
             </ul>
 
             <h3>Corporate</h3>
@@ -383,8 +391,11 @@
           </section>
 
           <footer>
-            <p>Dacia Ray is a freelance copy editor based in Seattle, WA.
-              She's available at <a href="mailto:daciaray@gmail.com">daciaray@gmail.com</a>.</p>
+            <p>
+              I live in the Fremont neighborhood of Seattle with my
+              husband, two sons, and a cat. In my spare time, I enjoy painting,
+              cooking, and sewing.
+              Email me at <a href="mailto:daciaray@gmail.com">daciaray@gmail.com</a>.</p>
           </footer>
     </section>
 
